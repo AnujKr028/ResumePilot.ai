@@ -29,7 +29,7 @@ export default function Home() {
         {isDarkMode ? "Light Mode" : "Dark Mode"}
       </button>
 
-      <h1 className="text-center mt-9 text-2xl font-mono">AI Powered Resume Builder</h1>
+      <h1 className="text-center mt-14 text-2xl font-mono">AI Powered Resume Builder</h1>
       <p className="text-center mt-2 text-[11px] font-mono">
         Generate resume in seconds and apply for jobs
       </p>

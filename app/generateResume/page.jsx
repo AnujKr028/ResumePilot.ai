@@ -59,7 +59,7 @@ Create a detailed, structured resume based on the following details.
 2. For the experience section, describe the responsibilities in depth, including specific skills and tools used.
 3. For each project, provide an overview of the impact and challenges faced.
 4. Expand on the achievements, with metrics and concrete examples of success.
-Then, clearly list exactly 3 improvement suggestions under the heading 'Suggestions'.
+Then, clearly list exactly 3 improvement suggestions under the heading 'Suggestions'. Do not add Star "*" symbol anywhere. Give the content in a structured manner.
 
 Name: ${formData.name}
 Email: ${formData.email}

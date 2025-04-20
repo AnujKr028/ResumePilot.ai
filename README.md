@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🧠 ResumePilot.ai
+AI-Powered Resume Builder
+ResumePilot.ai is an intelligent, open-source platform that streamlines the resume creation process. Leveraging AI, it assists users in crafting tailored resumes, ensuring they stand out to potential employers.​
 
-## Getting Started
+🚀 Features
+Dynamic Resume Creation: Input your details and let the system generate a structured resume.
 
-First, run the development server:
+AI Integration: Utilizes AI to provide content suggestions and optimize resume sections.
 
-```bash
+Real-Time Preview: View live updates as you fill out the resume form.
+
+PDF Export: Download your resume in a polished PDF format.
+
+Responsive Design: Ensures a seamless experience across devices.​
+
+
+🛠️ Tech Stack
+Frontend: Next.js, React, Tailwind CSS
+
+AI Integration: Cohere Api
+
+PDF Generation: jsPDF
+
+Authentication: NextAuth.js
+
+
+
+📦 Getting Started
+Clone the Repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/AnujKr028/ResumePilot.ai.git
+cd ResumePilot.ai
+Install Dependencies:
+
+bash
+Copy
+Edit
+npm install
+Set Up Environment Variables:
+
+Create a .env.local file in the root directory.
+
+Add the necessary environment variables as shown in .env.example.
+
+Run the Development Server:
+
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 to view it in the browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📸 Screenshots
+![Screenshot 2025-04-20 161705](https://github.com/user-attachments/assets/22a4731b-59ce-45bd-8deb-0999bb592b72)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🤝 Contributing
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
 
-## Learn More
+📬 Contact
+For feedback or inquiries:
 
-To learn more about Next.js, take a look at the following resources:
+GitHub: AnujKr028
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Live Demo: resume-pilot-ai.vercel.app
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+⭐️ Show Your Support
+If you find this project helpful, please give it a ⭐️ on GitHub!

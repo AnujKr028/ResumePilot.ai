@@ -1,8 +1,11 @@
-🧠 ResumePilot.ai
+**🧠 ResumePilot.ai**
+
 AI-Powered Resume Builder
+
 ResumePilot.ai is an intelligent, open-source platform that streamlines the resume creation process. Leveraging AI, it helps users craft tailored resumes, ensuring they stand out to potential employers.
 
 🚀 Features
+
 Dynamic Resume Creation: Input your details and let the system generate a structured resume.
 
 AI Integration: Utilizes the Cohere API to provide content suggestions and optimize resume sections.

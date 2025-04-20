@@ -28,20 +28,14 @@ Authentication: NextAuth.js
 📦 Getting Started
 Clone the Repository:
 
-bash
-
-Copy
-
-Edit
-
 git clone https://github.com/AnujKr028/ResumePilot.ai.git
+
 cd ResumePilot.ai
+
 Install Dependencies:
 
-bash
-Copy
-Edit
 npm install
+
 Set Up Environment Variables:
 
 Create a .env.local file in the root directory.
@@ -50,10 +44,8 @@ Add the necessary environment variables as shown in .env.example.
 
 Run the Development Server:
 
-bash
-Copy
-Edit
 npm run dev
+
 Open http://localhost:3000 to view it in the browser.
 
 📸 Screenshots

@@ -29,8 +29,11 @@ Authentication: NextAuth.js
 Clone the Repository:
 
 bash
+
 Copy
+
 Edit
+
 git clone https://github.com/AnujKr028/ResumePilot.ai.git
 cd ResumePilot.ai
 Install Dependencies:

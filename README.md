@@ -4,7 +4,7 @@ AI-Powered Resume Builder
 
 ResumePilot.ai is an intelligent, open-source platform that streamlines the resume creation process. Leveraging AI, it helps users craft tailored resumes, ensuring they stand out to potential employers.
 
-🚀 Features
+***🚀 Features***
 
 Dynamic Resume Creation: Input your details and let the system generate a structured resume.
 
@@ -16,7 +16,8 @@ PDF Export: Download your resume in a polished PDF format using jsPDF.
 
 Responsive Design: Ensures a seamless experience across devices.
 
-🛠️ Tech Stack
+
+***🛠️ Tech Stack***
 Frontend: Next.js, React, Tailwind CSS
 
 AI Integration: Cohere API
@@ -25,7 +26,9 @@ PDF Generation: jsPDF
 
 Authentication: NextAuth.js
 
-📦 Getting Started
+
+***📦 Getting Started***
+
 Clone the Repository:
 
 git clone https://github.com/AnujKr028/ResumePilot.ai.git
@@ -49,16 +52,19 @@ Open http://localhost:3000 to view it in the browser.
 📸 Screenshots
 
 
-🤝 Contributing
+
+***🤝 Contributing***
 Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
 
-📬 Contact
+
+***📬 Contact***
 For feedback or inquiries:
 
 GitHub: AnujKr028
 
 Live Demo: resume-pilot-ai.vercel.app
 
-⭐️ Show Your Support
+
+***⭐️ Show Your Support***
 If you find this project helpful, please give it a ⭐️ on GitHub!
 

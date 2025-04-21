@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResuCraft AI | Smart Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <svg viewBox="0 0 24 24">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M9,13V19H7V13H9M15,15V19H17V15H15M11,13V19H13V13H11Z" />
+                </svg>
+                ResuCraft AI
+            </div>
+        </header>
+
+        <div class="hero">
+            <h1>Craft Your Perfect Resume in Minutes</h1>
+            <p class="tagline">Powered by AI to help you stand out from the crowd and land your dream job</p>
+        </div>
+
+        <div class="form-container">
+            <div class="sections-nav">
+                <button class="section-tab active" data-section="personal">Personal Info</button>
+                <button class="section-tab" data-section="education">Education</button>
+                <button class="section-tab" data-section="skills">Skills</button>
+                <button class="section-tab" data-section="experience">Experience</button>
+                <button class="section-tab" data-section="strengths">Strengths</button>
+                <button class="section-tab" data-section="additional">Additional</button>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress" style="width: 16%;"></div>
+            </div>
+
+            <form id="resumeForm">
+                <div class="form-section active" id="personal-section">
+                    <h2 class="section-title">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+                        </svg>
+                        Personal Information
+                    </h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="e.g. John Smith" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="e.g. john@example.com" required />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="e.g. (555) 123-4567" />
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" id="location" name="location" placeholder="e.g. New York, NY" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="linkedin">LinkedIn (optional)</label>
+                            <input type="url" id="linkedin" name="linkedin" placeholder="e.g. linkedin.com/in/johnsmith" />
+                        </div>
+                        <div class="form-group">
+                            <label for="website">Portfolio/Website (optional)</label>
+                            <input type="url" id="website" name="website" placeholder="e.g. johnsmith.com" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section" id="education-section">
+                    <h2 class="section-title">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z" />
+                        </svg>
+                        Education
+                    </h2>
+                    <div class="form-group">
+                        <label for="education">Education Details</label>
+                        <textarea id="education" name="education" placeholder="Enter your education details including degree, school, graduation year, and GPA if applicable." required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section" id="skills-section">
+                    <h2 class="section-title">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M17.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,9A1.5,1.5 0 0,1 19,10.5A1.5,1.5 0 0,1 17.5,12M14.5,8A1.5,1.5 0 0,1 13,6.5A1.5,1.5 0 0,1 14.5,5A1.5,1.5 0 0,1 16,6.5A1.5,1.5 0 0,1 14.5,8M9.5,8A1.5,1.5 0 0,1 8,6.5A1.5,1.5 0 0,1 9.5,5A1.5,1.5 0 0,1 11,6.5A1.5,1.5 0 0,1 9.5,8M6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A9,9 0 0,0 21,12A9,9 0 0,0 12,3M12,19A7,7 0 0,1 5,12A7,7 0 0,1 12,5A7,7 0 0,1 19,12A7,7 0 0,1 12,19Z" />
+                        </svg>
+                        Skills
+                    </h2>
+                    <div class="form-group">
+                        <label for="skills">Professional Skills (comma separated)</label>
+                        <textarea id="skills" name="skills" placeholder="e.g. JavaScript, Python, Project Management, Communication, Data Analysis" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section" id="experience-section">
+                    <h2 class="section-title">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M20,6C20.58,6 21.05,6.2 21.42,6.59C21.8,7 22,7.45 22,8V19C22,19.55 21.8,20 21.42,20.41C21.05,20.8 20.58,21 20,21H4C3.42,21 2.95,20.8 2.58,20.41C2.2,20 2,19.55 2,19V8C2,7.45 2.2,7 2.58,6.59C2.95,6.2 3.42,6 4,6H8V4C8,3.42 8.2,2.95 8.58,2.58C8.95,2.2 9.42,2 10,2H14C14.58,2 15.05,2.2 15.42,2.58C15.8,2.95 16,3.42 16,4V6H20M4,8V19H20V8H4M14,6V4H10V6H14Z" />
+                        </svg>
+                        Work Experience
+                    </h2>
+                    <div class="form-group">
+                        <label for="experience">Work Experience</label>
+                        <textarea id="experience" name="experience" placeholder="Enter your work experience including job title, company name, dates, and key responsibilities/achievements." required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section" id="strengths-section">
+                    <h2 class="section-title">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M15.5,11A1.5,1.5 0 0,1 17,12.5A1.5,1.5 0 0,1 15.5,14A1.5,1.5 0 0,1 14,12.5A1.5,1.5 0 0,1 15.5,11M8.5,11A1.5,1.5 0 0,1 10,12.5A1.5,1.5 0 0,1 8.5,14A1.5,1.5 0 0,1 7,12.5A1.5,1.5 0 0,1 8.5,11M12,17.5C10.2,17.5 8.5,16.7 7.7,14.8H16.4C15.5,16.7 13.8,17.5 12,17.5Z" />
+                        </svg>
+                        Strengths
+                    </h2>
+                    <div class="form-group">
+                        <label for="Strength">Key Strengths</label>
+                        <textarea id="Strength" name="Strength" placeholder="Enter your key strengths, soft skills, or personal qualities relevant to your career goals." required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-section" id="additional-section">
+                    <h2 class="section-title">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M17,13H13V17H11V13H7V11H11V7H13V11H17M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />
+                        </svg>
+                        Additional Information
+                    </h2>
+                    <div class="form-group">
+                        <label for="Certifications">Certifications</label>
+                        <textarea id="Certifications" name="Certifications" placeholder="List any relevant certifications you've earned." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="Passions">Interests & Passions</label>
+                        <textarea id="Passions" name="Passions" placeholder="Share some personal interests or passions that might make your resume stand out." required></textarea>
+                    </div>
+                </div>
+
+                <div class="submit-container">
+                    <button type="submit">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M19 13V19H5V13H3V21H21V13H19M10 19H14V16H10V19M12 2L4 10H20L12 2M13 7.5C13 8.3 12.3 9 11.5 9S10 8.3 10 7.5 10.7 6 11.5 6 13 6.7 13 7.5Z" />
+                        </svg>
+                        Generate My Resume
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="loading-overlay">
+        <div class="spinner"></div>
+        <p>Creating your professional resume...</p>
+    </div>
+
+    
+    <div class="resume-preview-overlay" id="resumePreview" style="display: none;">
+        <div class="resume-preview-content">
+            <button class="close-preview" onclick="closePreview()">×</button>
+            <div id="resumeContent" class="resume-content-box">
+                <!-- Resume preview will be injected here -->
+            </div>
+            <a id="downloadBtn" class="download-btn" download="resume.pdf">Download PDF</a>
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>© 2025 ResuCraft AI | Powering your career journey with artificial intelligence</p>
+    </footer>
+<script src="app.js"></script>
+</body>
+</html>

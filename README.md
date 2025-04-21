@@ -32,7 +32,9 @@ Authentication: NextAuth.js
 Clone the Repository:
 
 git clone https://github.com/AnujKr028/ResumePilot.ai.git
+
 cd ResumePilot.ai
+
 Install Dependencies:
 
 
@@ -47,6 +49,7 @@ Run the Development Server:
 
 
 npm run dev
+
 Open http://localhost:3000 to view it in the browser.
 
 📸 Screenshots
